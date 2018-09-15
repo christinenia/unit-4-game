@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "crystal";
+    src: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/MagicCrystal.ttf");
+}
+
+@font-face {
+    font-family: "glitter";
+    src: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/The Road Ahead.otf");
+}
+
+body {
+    background: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/crystals.jpg");
+}
+
+.header {
+    font-family: glitter;
+    font-size: 150px;
+    color: rgb(184, 125, 211);
+    text-align: center;
+    
+}
+
+.rules {
+    font-family: glitter;
+    font-size: 28px;
+    color:rgb(230, 224, 224);
+    /* text-align: center; */
+    background-color: rgb(102, 198, 188);
+}
+
+.randomNumber {
+    font-family: glitter;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 5px;
+    
+}
