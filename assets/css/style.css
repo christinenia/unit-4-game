@@ -1,6 +1,6 @@
 @font-face {
     font-family: "crystal";
-    src: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/MagicCrystal.ttf");
+    src: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/ShookenDemo.ttf");
 }
 
 @font-face {
@@ -14,24 +14,54 @@ body {
 
 .header {
     font-family: glitter;
-    font-size: 150px;
-    color: rgb(184, 125, 211);
+    font-size: 225px;
+    font-weight: bold;
+    text-shadow: 10px 10px rgb(156, 240, 232); 
+    color: black;
     text-align: center;
-    
 }
 
 .rules {
     font-family: glitter;
-    font-size: 28px;
-    color:rgb(230, 224, 224);
-    /* text-align: center; */
-    background-color: rgb(102, 198, 188);
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    background-color: rgb(31, 174, 160);
+    border: 10px white double;
+    margin-right: 10px;
 }
 
 .randomNumber {
+    margin-left: 10px;
     font-family: glitter;
     font-size: 50px;
     text-align: center;
-    font-weight: 5px;
-    
+    background-color: rgb(150, 75, 182);
+    color: black;
+    border: 10px double white;
+}
+
+.scores {
+    margin-left: 10px;
+    font-family: glitter;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(150, 75, 182);
+    border: 10px white double;
+    color: black;
+}
+
+.crystals {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.score2 {
+    font-family: glitter;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(237, 151, 202);
+    border: 10px white double;
+    width: 50%;
+    margin: auto;
 }
