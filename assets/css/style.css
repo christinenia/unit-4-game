@@ -1,15 +1,15 @@
 @font-face {
     font-family: "crystal";
-    src: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/ShookenDemo.ttf");
+    src: url("../images/ShookenDemo.ttf");
 }
 
 @font-face {
     font-family: "glitter";
-    src: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/The Road Ahead.otf");
+    src: url("../images/The Road Ahead.otf");
 }
 
 body {
-    background: url("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/assets/images/crystals.jpg");
+    background: url("../images/crystals.jpg");
 }
 
 .header {
