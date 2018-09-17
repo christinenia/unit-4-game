@@ -3,7 +3,6 @@
 <html lang="en-us">
 
   <head>
-
     <meta charset="UTF-8">
     <title>Crystal Collectors Game</title>
     <!-- reset stylesheet -->
@@ -12,14 +11,10 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- favicon -->
     <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Added a link to Font Awesome CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- placeholders -->
-    <a href="https://icons8.com"></a>
   </head>
 
   <body>
@@ -27,6 +22,7 @@
 <div class="header">
     Crystal Collector
 </div>
+
 <div class="container">
   <div class="row">
     <div class=" rules col-sm">
@@ -44,10 +40,8 @@
         <br>
         <br>
 <div class="randomNumber">
- 
-  Random Number:
-  <br>
-  <br>
+Number to Guess:<br>
+  <span id="number-to-guess"></span>
 </div>
 <br>
 <div class="scores">
@@ -56,25 +50,62 @@
   Losses:
 </div>
 
-
 </div>
 
 </div>
 
 </div>
 
-<div class="crystals">
-    <img src="assets/images/aquamarine.jpg" alt="crystal" width="325" height="300">
-    <img src="assets/images/blue.jpg" alt="crystal" width="325" height="300">
-    <img src="assets/images/diamond.jpg" alt="crystal" width="325" height="300">
-    <img src="assets/images/green.jpg" alt="crystal" width="325" height="300">
-
+<div id="crystals">
+    <!-- <img class="crystal-image" src="assets/images/aquamarine.jpg" alt="crystals">
+    <img class="crystal-image" src="assets/images/blue.jpg" alt="crystals">
+    <img class="crystal-image" src="assets/images/diamond.jpg" alt="crystals">
+    <img class="crystal-image" src="assets/images/green.jpg" alt="crystals"> -->
 </div>
 <br>
 <br>
-
 <div class="score2">
 Your total score is:
 <br>
 <br>
 </div>
+
+<!-- Added link to the jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+var targetNumber = 53;
+
+$("#number-to-guess").text(targetNumber);
+
+var counter = 0;
+
+var numberOptions = [10, 5, 3, 7];
+
+for(var i = 0; i < numberOptions.length; i++) {
+  var imageCrystal = $("<img>");
+  imageCrystal.addClass("crystal-image");
+  imageCrystal.attr("src", "assets/images/aquamarine.jpg");
+  imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+  $("#crystals").append(imageCrystal);
+}
+
+$(".crystal-image").on("click", function() {
+  var crystalValue = ($(this).attr("data-crystalvalue"));
+  crystalValue = parseInt(crystalValue);
+  counter += crystalValue;
+  alert("New score: " + counter);
+
+  if (counter === targetNumber) {
+    alert("You win!");
+  }
+  else if (counter >= targetNumber) {
+    alert("You lose!");
+  }
+});
+
+
+</script>
+
+</body>
+</html>

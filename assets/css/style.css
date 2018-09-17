@@ -51,7 +51,7 @@ body {
     color: black;
 }
 
-.crystals {
+#crystals {
     text-align: center;
     padding-top: 50px;
 }
@@ -65,3 +65,8 @@ body {
     width: 50%;
     margin: auto;
 }
+
+.crystal-image {
+    width: 300px;
+    height: 300px;
+  }
