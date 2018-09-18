@@ -5,3 +5,4 @@ Randomize number for each crystal selected.
 Create if else alert for when user hits target number or passes target number.
 Create array/for loop for diff crystals
 Create score generator for wins and losses
+
