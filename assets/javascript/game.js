@@ -4,12 +4,13 @@ var targetNumber = Math.floor(Math.random() * ((120 + 1) - 19)) + 19;
 var counter = 0;
 var winCounter = 0;
 var lossCounter = 0;
+var numberCounter = 0;
 
 
-var crystal1 = Math.floor(Math.random() * 20) + 1;
-var crystal2 = Math.floor(Math.random() * 5) + 1;
-var crystal3 = Math.floor(Math.random() * 25) + 1;
-var crystal4 = Math.floor(Math.random() * 50) + 1;
+var crystal1 = Math.floor(Math.random() * 12) + 1;
+var crystal2 = Math.floor(Math.random() * 12) + 1;
+var crystal3 = Math.floor(Math.random() * 12) + 1;
+var crystal4 = Math.floor(Math.random() * 12) + 1;
 var numberOptions = [crystal1, crystal2, crystal3, crystal4];
 
 $("#number-to-guess").text(targetNumber);
@@ -26,22 +27,26 @@ $(".crystal-image").on("click", function() {
   var crystalValue = ($(this).attr("data-crystalvalue"));
   crystalValue = parseInt(crystalValue);
   counter += crystalValue;
-$("#totalScore").text("Your total score is: " + counter);
+$(".score2").html("Your total score is: " + counter);
+//not working
+ 
 
-  if (counter === targetNumber) {
+  if (counter == targetNumber) {
       winCounter++;
     alert("You win!");
-    $("#wins").text("Wins: " + winCounter);
+    $("#wins").text(winCounter);
+//not working
     startOver();
   }
   else if (counter >= targetNumber) {
       lossCounter++;
     alert("You lose!");
-    $("#losses").text("Losses: " + lossCounter);
+    $("#losses").text(lossCounter);
+//not working
     startOver();
   }
 
-  
+
 });
 
 })
