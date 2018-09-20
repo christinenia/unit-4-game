@@ -3,6 +3,11 @@
     src: url("../images/Guardians.ttf");
 }
 
+@font-face {
+    font-family: "header";
+    src: url("../images/JennaSue.ttf");
+}
+
 body {
     background: url("../images/guardians\ background.jpg");
     background-position: center;
@@ -22,6 +27,18 @@ body {
     color: rgb(210, 205, 205);
     text-shadow: 10px 10px black;
     text-align: center;
+}
+
+.smallHeader {
+    font-family: header;
+    font-size: 80px;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding-left: 625px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+
 }
 
 .rules {

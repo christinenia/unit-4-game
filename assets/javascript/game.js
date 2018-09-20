@@ -108,4 +108,4 @@ $(".score2").html("Your total score is: " + counter);
 // });
 
 })
-})
+});
