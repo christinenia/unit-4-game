@@ -4,13 +4,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Crystal Collectors Game</title>
+    <title>Guardians of the Galaxy</title>
     <!-- reset stylesheet -->
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <!-- css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- favicon -->
-    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="icon" href="assets/images/favicon.gif" type="image/x-icon">
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Added a link to Font Awesome CDN-->
@@ -20,7 +20,7 @@
   <body>
 
 <div class="header">
-    Crystal Collector
+    Guardians <span id ="small">of the</span> Galaxy
 </div>
 
 <div class="container">
@@ -28,15 +28,17 @@
     <div class=" rules col-sm">
       <p>You will be given a random number at the start of the game.</p>
     
-      <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+      <p>The Infinity Stones are below.  By clicking on a stone you will add a specific amount of points to your total score.</p>
       
-      <p>You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.</p>
+      <p>You win the game and save the Universe by matching your total score to the random number; you lose the game and Thanos will create the Infinity Gauntlet if your total score goes above the random number.</p>
       
-      <p>The value of each crystal is hidden until you click on it.</p>
+      <p>The value of each stone is hidden until you click on it.</p>
      
-      <p>Each time the game starts, the value of the crystals will change.</p>
+      <p>Each time the game starts, the value of the stones will change.</p>
     </div>
     <div class="col-sm">
+        <br>
+        <br>
         <br>
         <br>
 <div class="randomNumber">
@@ -45,10 +47,10 @@ Number to Guess: <br>
 </div>
 <br>
 <div class="scores">
-  Wins:
+  Wins:<br>
   <b><span id="wins"></span></b>
   <br>
-  Losses:
+  Losses: <br>
   <b><span id="losses"></span></b>
 </div>
 
@@ -58,15 +60,23 @@ Number to Guess: <br>
 
 </div>
 
-<div id="crystals">
+<div id="stones">
+
+  <!-- <img class= "stone1" src="assets/images/space stone.jpg" alt="stone1" width="auto" height="150">
+  <img class= "stone2" src="assets/images/mind stone.jpg" alt="stone2" width="auto" height="150">
+  <img class= "stone3" src="assets/images/reality stone.jpg" alt="stone3" width="auto" height="150">
+  <img class= "stone4" src="assets/images/power stone.jpg" alt="stone4" width="auto" height="150">
+  <img class= "stone5" src="assets/images/time stone.jpg" alt="stone5" width="auto" height="150">
+  <img class= "stone6" src="assets/images/soul stone.jpg" alt="stone6" width="auto" height="150">
+  <br> -->
   
 </div>
 <br>
 <br>
 <div class="score2">
 Your total score is:
-
-
+<br>
+<br>
 </div>
 
 <!-- Added link to the jQuery Library -->

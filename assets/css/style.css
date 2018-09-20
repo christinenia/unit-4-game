@@ -1,73 +1,73 @@
 @font-face {
-    font-family: "crystal";
-    src: url("../images/ShookenDemo.ttf");
-}
-
-@font-face {
-    font-family: "glitter";
-    src: url("../images/The Road Ahead.otf");
+    font-family: "guardians";
+    src: url("../images/Guardians.ttf");
 }
 
 body {
-    background: url("../images/crystals.jpg");
+    background: url("../images/guardians\ background.jpg");
+    background-position: center;
+}
+
+#small {
+    font-family: guardians;
+    font-size: 50px;
+    color: rgb(210, 205, 205);
+    text-shadow: 10px 10px black;
+    padding-bottom: 10px;
 }
 
 .header {
-    font-family: glitter;
-    font-size: 225px;
-    font-weight: bold;
-    text-shadow: 10px 10px rgb(156, 240, 232); 
-    color: black;
+    font-family: guardians;
+    font-size: 100px;
+    color: rgb(210, 205, 205);
+    text-shadow: 10px 10px black;
     text-align: center;
 }
 
 .rules {
-    font-family: glitter;
-    font-size: 30px;
-    color:black;
+    font-family: guardians;
+    font-size: 20px;
+    color: rgb(210, 205, 205);
     text-align: center;
-    background-color: rgb(31, 174, 160);
-    border: 10px white double;
+    border: 7px white dotted;
     margin-right: 10px;
 }
 
 .randomNumber {
     margin-left: 10px;
-    font-family: glitter;
-    font-size: 50px;
+    font-family: guardians;
+    font-size: 35px;
     text-align: center;
-    background-color: rgb(150, 75, 182);
-    color: black;
-    border: 10px double white;
+    color: rgb(210, 205, 205);
+    border: 7px dotted white;
 }
 
 .scores {
     margin-left: 10px;
-    font-family: glitter;
-    font-size: 50px;
+    font-family: guardians;
+    font-size: 35px;
     text-align: center;
-    background-color: rgb(150, 75, 182);
-    border: 10px white double;
-    color: black;
+    border: 7px white dotted;
+    color: rgb(210, 205, 205);
 }
 
-#crystals {
+#stones {
     text-align: center;
     padding-top: 50px;
 }
 
 .score2 {
-    font-family: glitter;
+    font-family: guardians;
     text-align: center;
-    font-size: 50px;
-    background-color: rgb(237, 151, 202);
-    border: 10px white double;
+    font-size: 35px;
+    border: 7px white dotted;
     width: 50%;
     margin: auto;
+    color: rgb(210, 205, 205);
 }
 
-.crystal-image {
-    width: 300px;
-    height: 300px;
+.stones-image {
     padding: 0px 10px 0px 10px;
+    height: auto;
+    width: 200px;
   }
