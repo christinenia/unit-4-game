@@ -13,6 +13,7 @@ var stone4 = Math.floor(Math.random() * 12) + 1;
 var stone5 = Math.floor(Math.random() * 12) + 1;
 var stone6 = Math.floor(Math.random() * 12) + 1;
 var numberOptions = [stone1, stone2, stone3, stone4, stone5, stone6];
+var audio = new Audio("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/Mr Blue Sky.mp3");
 // var stone1Total = 0;
 // var stone2Total = 0;
 // var stone3Total = 0;
@@ -79,6 +80,7 @@ for(var i = 0; i < numberOptions.length;i++) {
 }
 
 $(".stones-image").on("click", function() {
+  audio.play();
   var stoneValue = ($(this).attr("data-stonevalue"));
   stoneValue = parseInt(stoneValue);
   counter += stoneValue;
