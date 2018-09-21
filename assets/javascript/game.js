@@ -74,7 +74,7 @@ if(clickedPic === "stone6") {
 }
 $(".score2").html("Your total score is: " + total);
 
-if (total === targetNumber) {
+if (total === targetNumber) {    
   winCounter++;
 alert("You are one step closer to saving the Universe!");
 $("#wins").text(winCounter);
