@@ -83,7 +83,7 @@ resetGame();
 else if (total >= targetNumber) {
   lossCounter++;
 alert("OH NO, Thanos is one step closer to completing his Infinity Guantlet!");
-$("#losses").text(lossCounter)
+$("#losses").text(lossCounter);
 resetGame();
 }
 
