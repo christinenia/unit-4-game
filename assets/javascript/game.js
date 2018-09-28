@@ -12,8 +12,6 @@ var stone3 = Math.floor(Math.random() * 12) + 1;
 var stone4 = Math.floor(Math.random() * 12) + 1;
 var stone5 = Math.floor(Math.random() * 12) + 1;
 var stone6 = Math.floor(Math.random() * 12) + 1;
-var audio = new Audio("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/Mr Blue Sky.mp3");
-audio.play();
 var stone1Total = 0;
 var stone2Total = 0;
 var stone3Total = 0;
@@ -28,6 +26,7 @@ $("#number-to-guess").text(targetNumber);
 function resetGame() {
   targetNumber = Math.floor(Math.random() * ((120 + 1) - 19)) + 19;
   counter = 0;
+  total = 0;
   stone1 = Math.floor(Math.random() * 12) + 1;
   stone2 = Math.floor(Math.random() * 12) + 1;
   stone3 = Math.floor(Math.random() * 12) + 1;
@@ -36,10 +35,12 @@ function resetGame() {
   stone6 = Math.floor(Math.random() * 12) + 1;
   $("#number-to-guess").text(targetNumber);
   $(".score2").html("Your total score is: " + counter);
+  console.log("counter ", counter,"total", total, "target", targetNumber);
 }
 
 function stones(button) {
 $(button).on("click", function () {
+
   var clickedPic = $(button).attr("alt");
 
 if(clickedPic === "stone1") {
@@ -73,6 +74,7 @@ if(clickedPic === "stone6") {
   var total = stone1Total + stone2Total + stone3Total + stone4Total + stone5Total + stone6Total;
 }
 $(".score2").html("Your total score is: " + total);
+console.log("total: ", total, "target number: ", targetNumber )
 
 if (total === targetNumber) {    
   winCounter++;
@@ -129,5 +131,7 @@ stones($(".stone6"));
 resetGame();
 });
 
+const music = new Audio("/Users/cnyokoyama/Documents/UCLA/Homework/unit-4-game/Mr Blue Sky.mp3");
+$('stones').click(e => music.play());
 // 
 // });
